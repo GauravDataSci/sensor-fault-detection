@@ -1,2 +1,2 @@
-Pymongo == 4.2.0
+Pymongo[srv] == 4.2.0
 -e .
