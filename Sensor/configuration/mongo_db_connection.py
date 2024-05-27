@@ -11,7 +11,7 @@ class  MongoDBClient:
                 mongo_db_url = "mongodb+srv://gkumardav:Gaurav1993@cluster.3kmskua.mongodb.net/?retryWrites=true&w=majority&appName=CLUSTER"
                 MongoDBClient.client = pymongo.MongoClient(mongo_db_url,tlsCAFile = ca)
             self.client = MongoDBClient.client
-            self.database_name = database_name
+            self.database = self.client[database_name]
         except Exception as e:
             raise e        
 
